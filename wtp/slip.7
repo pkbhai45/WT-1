@@ -17,3 +17,15 @@ li {
 </ul>
 </body>
 </html>
+
+
+
+
+Q2) 
+import pandas as p
+from sklearn import preprocessing
+ d = pd.read_csv('Data.csv')
+label_encoder = preprocessing.LabelEncoder()
+ d['purchased']= label_encoder.fit_transform(d['purchased'])
+one_hot_encoded_data = p.get_dummies(d, columns = ['country'])
+print(one_hot_encoded_data)
