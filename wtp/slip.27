@@ -13,6 +13,8 @@ HTML FILE
  </form>
 </body>
 </html>
+
+
 PHP FILE
 <?php
 $fname1=$_GET['fname1'];
@@ -24,3 +26,13 @@ $str=fread($fp1,$size);
 fwrite($fp2,$str,$size);
 echo "Append Successfull";
 ?>
+
+
+Q2A)
+import pandas as p
+from sklearn import preprocessing
+ d = pd.read_csv('D:\\yogita\\Data.csv')
+label_encoder = preprocessing.LabelEncoder()
+ d['purchased']= label_encoder.fit_transform(d['purchased'])
+one_hot_encoded_data = p.get_dummies(d, columns = ['country'])
+print(one_hot_encoded_data)
