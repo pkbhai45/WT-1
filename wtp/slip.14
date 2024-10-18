@@ -16,3 +16,24 @@ Slip14: Create a container add row inside it and add 3 columns inside row using 
 </div>
 </body>
 </html>
+
+
+
+Q2A)
+import numpy as np
+# Original array
+array = np.arange(5)
+print(array)  
+weights = np.arange(10, 15)
+print(weights)  
+# Weighted average of the given array
+res1 = np.average(array, weights=weights)
+print(res1)
+
+Q2B)
+import pandas as p
+df = pd.read_csv('C:\\Users\\DELL\\Advertising.csv')
+df.shape # no.of rows & cols
+df.describe() #stats data
+df.info() #features
+df.dtypes
