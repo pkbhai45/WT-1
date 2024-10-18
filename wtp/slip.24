@@ -13,6 +13,8 @@ HTML FILE
  </form>
 </body>
 </html>
+
+
 PHP FILE (create 2 text file pf your choice name and use same)
 <?php
 $fname1=$_GET['fname1'];
@@ -24,4 +26,35 @@ $str=fread($fp1,$size);
  fwrite($fp2,$str,$size);
 echo "Append Successfull";
 ?>
+
+
+
+Q2A)
+import pandas as p
+import matplotlib.pyplot as plt
+d=p.read_csv('C:\\Users\\DELL\\Untitled Folder\\Iris.csv')
+d[d.Species=='Iris-setosa'].plot.bar(x='PetalLengthCm',y='PetalWidthCm',color='orange', label='Setosa')
+d[d.Species=='Iris-versicolor'].plot.bar(x='PetalLengthCm',y='PetalWidthCm',color='blue', label='versicolor')
+d[d.Species=='Iris-virginica'].plot.bar(x='PetalLengthCm',y='PetalWidthCm',color='green', label='virginica')
+fig.set_xlabel("Petal Length")
+fig.set_ylabel("Petal Width")
+fig.set_title(" Petal Length VS Petal Width")
+#fig=plt.gcf()
+#fig.set_size_inches(12,8)
+plt.show()
+
+
+Q2B)
+import pandas as p
+import matplotlib.pyplot as plt
+d=p.read_csv('C:\\Users\\DELL\\Untitled Folder\\Iris.csv')
+d[d.Species=='Iris-setosa'].plot.hist(x='PetalLengthCm',y='PetalWidthCm',color='orange', label='Setosa')
+d[d.Species=='Iris-versicolor'].plot.hist(x='PetalLengthCm',y='PetalWidthCm',color='blue', label='versicolor')
+d[d.Species=='Iris-virginica'].plot.hist(x='PetalLengthCm',y='PetalWidthCm',color='green', label='virginica')
+fig.set_xlabel("Petal Length")
+fig.set_ylabel("Petal Width")
+fig.set_title(" Petal Length VS Petal Width")
+#fig=plt.gcf()
+#fig.set_size_inches(12,8)
+plt.show()
 
