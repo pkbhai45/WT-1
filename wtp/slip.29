@@ -12,6 +12,8 @@ Enter Event Name:<input type=text name=t1><br>
 </form>
 </html>
 PHP File
+
+
 <?php
 $con=pg_connect("host=localhost user=postgres password=nrc bname=practicals22");
 //echo $con;
@@ -26,3 +28,13 @@ else
  echo "Status not updated";
  ?>
 
+
+
+Q2) 
+import pandas as p
+from sklearn import preprocessing
+ d = pd.read_csv('Data.csv')
+label_encoder = preprocessing.LabelEncoder()
+ d['purchased']= label_encoder.fit_transform(d['purchased'])
+one_hot_encoded_data = p.get_dummies(d, columns = ['country'])
+print(one_hot_encoded_data)
