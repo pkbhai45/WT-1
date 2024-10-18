@@ -27,6 +27,8 @@ case"2": sub($x,$y);
  break;
 }
 ?>
+
+
 HTML FILE
 <html>
 <body>
@@ -47,3 +49,29 @@ PHP FILE
 <?php
 include'slip12.php';
 ?>
+
+
+Q2A)
+ import matplotlib.pyplot as plt
+import numpy as np
+x = np.random.randn(50)
+y = np.random.randn(50)
+plt.plot(x,y)
+plt.show()
+plt.scatter(x,y)
+plt.show()
+plt.hist(x)
+plt.show()
+plt.boxplot(y, vert=False)
+plt.show()
+
+
+Q2B)
+import pandas as p
+df=p.DataFrame({'name':['kunal','rekha','satish','ashish','radha'],
+               'dept':['production','computer','manufacturing',None,'manufacturing'],
+                'salary':[100000,300000,20000,300000,80000] })
+print(df)
+d=df.dropna()
+print(d)
+
