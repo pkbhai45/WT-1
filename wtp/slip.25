@@ -20,6 +20,8 @@ HTML FILE
 </form>
 </body>
 </html>
+
+
 PHP FILE
 <?php
 $fp=$_GET['fname1'];
@@ -39,4 +41,32 @@ switch($op)
  break;
 }
 ?>
+
+
+Q2A)
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.random.randn(50)
+y = np.random.randn(50)
+plt.plot(x,y)
+plt.show()
+plt.scatter(x,y,color=’green’)
+plt.show()
+plt.hist(x,color=’yellow’)
+plt.show()
+plt.boxplot(y, vert=False)
+plt.show()
+
+Q2B)
+from matplotlib import pyplot as plt
+import numpy as np
+# Creating dataset
+subjects = ['TCS', 'Data Science', 'OS',
+        'JAVA', 'PHP', 'Python']
+marks = [23, 17, 35, 29, 12, 33]
+ # Creating plot
+fig = plt.figure(figsize =(10, 7))
+plt.pie(marks, labels = subjects)
+ # show plot
+plt.show()
 
