@@ -17,6 +17,8 @@ table
  height:100%;
 }
 </style>
+
+
 <?php
 echo"<table border=1>";
 for($i=1;$i<=8;$i++)
@@ -47,3 +49,24 @@ for($i=1;$i<=8;$i++)
 echo"</table>" ;
 ?>
 </html>
+
+
+Q2A)
+import pandas as p
+import matplotlib.pyplot as plt
+d=p.read_csv('C:\\Users\\DELL\\Untitled Folder\\Iris.csv')
+fig = d[d.Species=='Iris-setosa'].plot.bar(x='PetalLengthCm',y='PetalWidthCm',color='orange', label='Setosa')
+d[d.Species=='Iris-versicolor'].plot.bar(x='PetalLengthCm',y='PetalWidthCm',color='blue', label='versicolor',ax=fig)
+d[d.Species=='Iris-virginica'].plot.bar(x='PetalLengthCm',y='PetalWidthCm',color='green', label='virginica', ax=fig)
+fig.set_xlabel("Petal Length")
+fig.set_ylabel("Petal Width")
+fig.set_title(" Petal Length VS Petal Width")
+#fig=plt.gcf()
+#fig.set_size_inches(12,8)
+plt.show()
+
+Q2B)
+import numpy as n
+d=n.array([[0,1],[2,3]])
+print(d.max())
+print(d.min())
