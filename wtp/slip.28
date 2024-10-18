@@ -21,3 +21,25 @@ echo
 }
 echo "</table>";
 ?>
+
+
+
+Q2A)
+import pandas as p
+df=p.DataFrame(columns =['name','age','per'])
+df.loc[0]=['rajesh',20,95]
+df.loc[1]=['suresh',21,85]
+df.loc[2]=['avinash',20,90]
+df.loc[3]=['kunal',21,75]
+df.loc[4]=['sakshi',20,80]
+df.loc[6]=['xxx',np.nan,95]
+df.loc[7]=['suresh',21,85]
+df.loc[8]=['archana',22,91]
+df.loc[9]=['kunal',20,np.nan]
+print(df)
+print(df.shape)
+print(df.describe)
+print(df.info())
+print(df.dtypes)
+df["remark"]=None
+df
