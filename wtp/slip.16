@@ -16,6 +16,8 @@ subject marks<input type = "text" name = "v3"/></br></br>
 </form>
 </body>
 </html>
+
+
 PHP FILE
 <?php
 $a =$_GET['v1'];
@@ -41,3 +43,28 @@ echo "<tr><td>Total marks </td><td>$sum</td>";
 echo"<tr><td>Percentage</td><td>$result</td></tr>";
 echo "</center>"
 ?>
+
+
+Q2A)
+from matplotlib import pyplot as plt
+import numpy as np
+# Creating dataset
+subjects = ['TCS', 'Data Science', 'OS',
+        'JAVA', 'PHP', 'Python']
+marks = [23, 17, 35, 29, 12, 33]
+ 
+# Creating plot
+fig = plt.figure(figsize =(10, 7))
+plt.pie(marks, labels = subjects)
+ csv
+# show plot
+plt.show()
+
+Q2B)
+import pandas as p
+import numpy as n
+df=p.DataFrame({'name':['kunal','rekha','satish','ashish','radha'],
+               'age':[20,23,22,20,21],
+               'per':[98,80,95,92,85]})
+print(n.average(df['age']))
+print(n.average(df['per']))
