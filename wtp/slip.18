@@ -20,6 +20,7 @@ key.</br></br>
 <input type=submit value=send>
 </body>
 </html>
+
 PHP FILE
 <?php
 $a = array("a"=>1,"b"=>21,"c"=> 56);
@@ -60,3 +61,21 @@ default:
  echo "Invalid choice!!";
 }
 ?>
+
+
+
+Q2A)
+import pandas as p
+d=p.read_csv('C:\\Users\\DELL\\Untitled Folder\\Iris.csv')
+#remove id field from iris dataset
+new_data = d[["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm"]] 
+print(new_data)
+plt.figure(figsize = (10, 7))
+new_data.boxplot()
+
+Q2B)
+import pandas as p
+df = pd.read_csv('C:\\Users\\DELL\\ht&wt.csv')
+print(df.head(5))
+print(df.tail(5))
+print(df.sample(10))
