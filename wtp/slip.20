@@ -16,6 +16,7 @@ values <br>
  </form>
  </body>
 </html>
+
 PHP FILE
 <?php
 $choice=$_GET['ch'];
@@ -44,4 +45,21 @@ $arr=array('a'=>1,'b'=>20,'c'=>13,'d'=>5,'e'=>18,'f'=>12,'g'=>7,'h'=>8,'i'=>15,'
  break;
  }
 ?>
+
+
+Q2A)
+ import matplotlib.pyplot as plt
+import numpy as np
+x = np.random.randn(50)
+y = np.random.randn(50)
+plt.plot(x,y)
+plt.show()
+plt.scatter(x,y)
+plt.show()
+plt.hist(x)
+plt.show()
+
+Q2B)
+plt.boxplot(y, vert=False)
+plt.show()
 
