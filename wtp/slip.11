@@ -14,3 +14,22 @@ Warning, Danger) using BootStrap.
 <input type= button value="danger" class="btn btn-danger">
 </body>
 </html>
+
+
+
+Q2A)
+import pandas as pd
+import matplotlib.pyplot as plt
+d = pd.read_csv('C:\\Users\\DELL\\Untitled Folder\\Iris.csv')
+ax=plt.subplots(1,1,figsize=(10,8)) //defines size of chart area
+d['Species'].value_counts().plot.pie() //counts distinct values in dataset
+plt.title("Iris Species %")
+plt.show()
+
+Q2B) 
+import pandas as p
+df = pd.read_csv('C:\\Users\\DELL\\winequality-red.csv')
+df.shape # no.of rows & cols
+df.describe() #stats data
+df.info() #features
+df.dtypes
